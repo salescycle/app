@@ -1,0 +1,4 @@
+.main-table {
+	list-style-type: none;
+	width: var(--tableWidth)
+}

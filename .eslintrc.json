@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+				"mocha": true
+    },
+		"globals": {
+			"expect": false
+		},
+    "extends": ["eslint:recommended", "plugin:react/all"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+				"no-global-assign": "error",
+        "react/jsx-uses-react": "error",
+				"react/jsx-indent": [
+					"error",
+					"tab"
+				],
+				"react/jsx-indent-props": [
+					"error",
+					"tab"
+				]
+    }
+}
