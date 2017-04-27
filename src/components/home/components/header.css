@@ -1,10 +1,14 @@
-
-.headerScheme {
-  color: red;
-}
-
 .titleImage{
   .float: left !important;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-top: 15px;
+}
+
+.appName {
+  color: #444444;
+	font-weight: bold;
+}
+
+.appNameDiv {
+	margin-top: 22px;
+
 }
