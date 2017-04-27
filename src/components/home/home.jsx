@@ -8,7 +8,11 @@ export default function Home(props){
 	let {handleClick} = props
 	return (
 		<div>
-				<Header></Header>
+		<div className="row collapse">
+		<div className="columns small-8">
+				<Header titleText="| Might Morphin Power Client Syncer"></Header>
+				</div>
+				</div>
 				<div className={Styles.mainMenu}>
 					<ClientListContainer />
 				</div>

@@ -6,10 +6,12 @@ var nmLogo = require('../../../svgs/nmlogo_navy.svg')
 
 export default function Header(props){
   return (
-    <div>
-			<img src={nmLogo} className={styles.titleImage} />
-			<div>
-				<span className={styles.headerScheme}>{props.titleText}</span>
+    <div className="row collapse">
+			<div className="columns small-4">
+				<img src={nmLogo} className={styles.titleImage} />
+			</div>
+			<div className={`${styles.appNameDiv} columns small-8`}>
+				<span className={styles.appName}>{props.titleText}</span>
 			</div>
     </div>
   )
