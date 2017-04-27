@@ -10,7 +10,11 @@ export default function Home(props){
 			<Header titleText=" this is the header"></Header>
 				<Menu menuStyle="chevron"></Menu>
 				<button onClick={handleClick}>{'Click'}</button>
-				<ClientList {...props} />
+				<div className="row">
+					<ClientList {...props} />
+				</div>
+				<button className="button primary">Here is a button</button>
+				<a className="button primary" href="#">Primary</a>
 		</div>
 	)
 }

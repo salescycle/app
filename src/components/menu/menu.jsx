@@ -4,7 +4,7 @@ import React, {PropTypes} from 'react'
 export default function Menu(props) {
 	return (
 		<div>
-			<div className={props.menuStyle}>This sucks</div>
+			<div className={props.menuStyle}></div>
 		</div>
 	)
 }
