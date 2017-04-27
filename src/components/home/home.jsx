@@ -1,22 +1,21 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
 import Header from './components/header.jsx'
-import Menu from '../Menu/menu.jsx'
-import ClientList from '../clientList/clientList.jsx'
+import PropTypes from 'prop-types'
+import ClientListContainer from '../../container/client/clientList.js'
 import Styles from './home.css'
 
 export default function Home(props){
 	let {handleClick} = props
 	return (
-		<div >
-			<Header></Header>
-				<Menu menuStyle="chevron"></Menu>
+		<div>
+				<Header></Header>
 				<div className={Styles.mainMenu}>
-					<ClientList {...props} />
+					<ClientListContainer />
 				</div>
 		</div>
 	)
 }
 
 Home.propTypes = {
-	handleClick: PropTypes.func.isRequired
+	handleClick: PropTypes.func
 }

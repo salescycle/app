@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
+import { elementType } from 'react-prop-types';
 import Chevron from './components/chevron.jsx'
 import Styles from './clientList.css'
 
@@ -35,5 +36,5 @@ export default function ClientList(props) {
 }
 
 ClientList.props = {
-	clientName: PropTypes.string
+	clientName: elementType
 }

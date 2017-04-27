@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
+import { elementType } from 'react-prop-types';
 var chevronImage = require('../../../svgs/chevron5.svg')
 
 export default function Chevron(props) {
@@ -12,6 +13,5 @@ export default function Chevron(props) {
 }
 
 Chevron.props = {
-	chevronText: PropTypes.string,
-	chevronBackground: PropTypes.string
+	chevronBackground: elementType
 }
