@@ -4,5 +4,7 @@
 }
 
 .titleImage{
-  float: left !important;
+  .float: left !important;
+	margin-left: 10px;
+	margin-right: 10px;
 }

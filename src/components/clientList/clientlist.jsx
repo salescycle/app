@@ -3,11 +3,13 @@ import Chevron from './components/chevron.jsx'
 import Styles from './clientList.css'
 
 export default function ClientList(props) {
+
 	return (
-		<div className="row">
-			<div className="columns small-2">
+		<div className={`${Styles.clientRowDiv} row`}>
+			<div className={`${Styles.clientNameDiv} columns small-2`}>
 				<span className={Styles.clientName}>Bill Brasky</span>
 			</div>
+			<div className="columns small-10">
 			<div className="columns small-2">
 			<Chevron className="" chevronBackground={Styles.chevronBackground} chevronText='Telephone'/>
 			</div>
@@ -26,7 +28,9 @@ export default function ClientList(props) {
 			<div className="columns small-2">
 			<Chevron chevronBackground={Styles.chevronBackground} chevronText='Website'/>
 			</div>
+			</div>
 		</div>
+
 	)
 }
 

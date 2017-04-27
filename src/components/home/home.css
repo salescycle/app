@@ -3,6 +3,10 @@
 	width: var(--tableWidth)
 }
 
-.chevron {
-  color: red;
+.mainMenu {
+	margin-top: 30px;
+	padding-top: 20px;
+	background-color: #f1f1f1;
+	height: 500px;
+	width: 100%;
 }

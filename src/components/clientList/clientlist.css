@@ -1,3 +1,8 @@
+.clientRowDiv {
+	padding-top: 20px;
+	background-color: #CCCCCC;
+}
+
  .chevronBackground {
 	background-image: url('../../svgs/chevron5.svg');
 	background-repeat: no-repeat;
@@ -5,7 +10,7 @@
 	display: flex;
 	color: white;
 	font-family: helvetica, sans-serif;
-	font-size: 25px;
+	font-size: 15px;
 
 
 }
@@ -18,4 +23,8 @@
 .clientName {
 	font-family: helvetica, sans-serif;
 	font-size: 25px;
+}
+
+.clientNameDiv {
+	 margin-top: 5px;
 }
