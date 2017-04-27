@@ -1,46 +1,10 @@
-.clientRowDiv {
-	padding-top: 20px;
-	background-color: #CCCCCC;
-	margin-left: 200px;
-}
-
- .chevronBackground {
-	background-image: url('../../svgs/chevron5.svg');
-	background-repeat: no-repeat;
-	height: 70px;
-	display: flex;
-	color: white;
-	font-family: helvetica, sans-serif;
-	font-size: 15px;
-
-
-}
-
-.chevronBackground span {
-	padding-top: 15px;
-	padding-left: 10px;
-}
-
-.clientName {
-	font-family: helvetica, sans-serif;
-	font-size: 25px;
-}
-
-.clientNameDiv {
-	 margin-top: 5px;
-}
-
-
-
-
-
 *,
 *:after,
 *:before {
   box-sizing: border-box;
 }
 
-.stepsContainer {
+.steps-container {
   overflow: hidden;
   margin: 0px;
   padding: 0px;
@@ -48,19 +12,20 @@
   border-left: 2px solid;
   border-right: 2px solid;
   width: 100%;
-  counter-reset: steps;
+	height: 50px;
 }
 .steps {
   position: relative;
   display: inline-block;
-  left: -28px; /* -2px default + 26px offset to hide skewed area on the left side of first element*/
+  left: -28px;
   height: 50px;
   line-height: 50px;
   margin-left: 0px;
   margin-right: 0px;
-  counter-increment: steps;
   cursor: pointer;
   min-height: 30px;
+	min-width: 160px;
+	margin-left: 5px;
 }
 
 .steps:after,
@@ -74,7 +39,7 @@
   border-bottom: 2px solid;
   border-left: 3px solid; /* thicker border as skew makes them look thin */
   border-right: 3px solid;
-  background: rgba(0, 43, 73, 1);
+  background: #002b49;
 }
 
 .steps:before {
@@ -92,6 +57,9 @@
 }
 
 .steps span{
+	position: absolute;
+	z-index: 1;
+	color: white;
   display: block;
   padding-left: 40px;
   overflow: hidden;
@@ -102,7 +70,7 @@
 }
 
 .steps span:before{
-  content: counter(steps) ". ";
+
 }
 .steps.active span{
   font-weight: bold;
