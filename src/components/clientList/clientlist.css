@@ -1,0 +1,14 @@
+.chevronBackground {
+	background-image: url('../../svgs/chevron5.svg');
+	background-repeat: no-repeat;
+	height: 70px;
+	display: flex;
+
+
+}
+
+.chevronBackground  div{
+	margin-left: 10px;
+
+
+}
