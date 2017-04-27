@@ -2,3 +2,7 @@
 	list-style-type: none;
 	width: var(--tableWidth)
 }
+
+.chevron {
+  color: red;
+}

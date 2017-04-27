@@ -7,7 +7,7 @@ export default function Home(props){
 	return (
 		<div>
 			<Header titleText=" this is the header"></Header>
-			<Menu></Menu>
+			<Menu menuStyle="chevron"></Menu>
 			<button onClick={handleClick}>{'Click'}</button>
 		</div>
 	)

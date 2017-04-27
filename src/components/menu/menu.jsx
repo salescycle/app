@@ -1,14 +1,13 @@
 import React, {PropTypes} from 'react'
 
-
 export default function Menu(props){
   return (
     <div>
-        <div className="chevron">This sucks</div>
+        <div className="{menuStyle}">This sucks</div>
     </div>
   )
 }
 
 Menu.props = {
-  titleText: PropTypes.string
+  menuStyle: PropTypes.string
 }
