@@ -1,10 +1,11 @@
 import React, {PropTypes} from 'react'
+import Header from '../header/header.jsx'
 
 export default function Home(props){
 	let {handleClick} = props
 	return (
 		<div>
-			<h1>{'Sales Cycle App'}</h1>
+			<Header titleText=" this is the header"></Header>
 			<button onClick={handleClick}>{'Click'}</button>
 		</div>
 	)
