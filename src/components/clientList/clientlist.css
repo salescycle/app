@@ -3,12 +3,7 @@
 	background-repeat: no-repeat;
 	height: 70px;
 	display: flex;
-
-
-}
-
-.chevronBackground  div{
-	margin-left: 10px;
-
+	color: white;
+	font-family: helvetica, sans-serif;
 
 }
