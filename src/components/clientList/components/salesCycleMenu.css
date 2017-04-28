@@ -5,22 +5,44 @@
 
 
 
-.menuDiv {
-	margin-top: 90px;
+.menuDivFactfinding {
 	background-color: red;
 	width: 450px;
 	height: 180px;
 	overflow: scroll;
 	border-radius: 5px;
+	margin-left: 552px;
 }
 
-.menuDiv:after {
+.menuDivFactfinding:after {
 	position: absolute;
   bottom: 201px;
 	height: 0;
   width: 0;
-  left: 184px;
+  left: 748px;
   border: 40px solid transparent;
   border-bottom-color: red;
+  content: "";
+
+}
+
+.menuDivPreparation {
+	background-color: blue;
+	width: 450px;
+	height: 180px;
+	overflow: scroll;
+	border-radius: 5px;
+	margin-left: 725px;
+
+}
+
+.menuDivPreparation:after {
+	position: absolute;
+  bottom: 210px;
+	height: 0;
+  width: 0;
+  left: 916px;
+  border: 40px solid transparent;
+  border-bottom-color: blue;
   content: "";
 }

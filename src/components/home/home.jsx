@@ -3,6 +3,7 @@ import Header from './components/header.jsx'
 import PropTypes from 'prop-types'
 import ClientListContainer from '../../container/client/clientList.js'
 import Styles from './home.css'
+import StageList from '../../components/clientList/components/SalesCycleMenu.jsx'
 
 export default function Home(props) {
 	let {handleClick} = props
@@ -16,6 +17,7 @@ export default function Home(props) {
 			<div className="row expanded collapse">
 				<div className={`${Styles.mainMenu} columns small-12`}>
 					<ClientListContainer/>
+					<StageList />
 				</div>
 			</div>
 		</div>
