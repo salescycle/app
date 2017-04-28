@@ -12,8 +12,12 @@ export default function ClientRow(props) {
 	const seven = 'Follow-Through'
 
 
+
+
+console.log("this is the stage", props.stage1);
 	console.log("this is the props", props);
 	return (
+
 
 		<div className={`${Styles.clientRowDiv} row expanded collapse`}>
 			<div className={`${Styles.clientNameDiv} columns small-2`}>
@@ -24,22 +28,22 @@ export default function ClientRow(props) {
 					<div className='steps green'>
 						<span>{one}</span>
 					</div>
-					<div className='steps yellow'>
+					<div className={props.stage1 === 'N' ? 'steps' : 'steps green'}>
 						<span>{two}</span>
 					</div>
-					<div className='steps red'>
+					<div className={props.stage2 === 'N' ? 'steps' : 'steps green'}>
 						<span>{three}</span>
 					</div>
-					<div className='steps'>
+					<div className={props.stage3 === 'N' ? 'steps' : 'steps green'}>
 						<span>{four}</span>
 					</div>
-					<div className='steps'>
+					<div className={props.stage4 === 'N' ? 'steps' : 'steps green'}>
 						<span>{five}</span>
 					</div>
-					<div className='steps'>
+					<div className={props.stage5 === 'N' ? 'steps' : 'steps green'}>
 						<span>{six}</span>
 					</div>
-					<div className='steps'>
+					<div className={props.stage6 === 'N' ? 'steps' : 'steps green'}>
 						<span>{seven}</span>
 					</div>
 				</div>
@@ -53,13 +57,13 @@ export default function ClientRow(props) {
 }
 
 ClientRow.props = {
-	one: PropTypes.string,
-	two: PropTypes.string,
-	three: PropTypes.string,
-	four: PropTypes.string,
-	five: PropTypes.string,
-	six: PropTypes.string,
-	seven: PropTypes.string,
+	stage0: PropTypes.string,
+	stage1: PropTypes.string,
+	stage2: PropTypes.string,
+	stage3: PropTypes.string,
+	stage4: PropTypes.string,
+	stage5: PropTypes.string,
+	stage6: PropTypes.string,
 	users: PropTypes.string,
 	handleClick: PropTypes.func,
 	fullName: PropTypes.string,
