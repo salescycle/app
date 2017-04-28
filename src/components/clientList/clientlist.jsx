@@ -46,10 +46,14 @@ export default function ClientList(props) {
 	}*/
 function getUsers(){
 	console.log('pros in render : ',props.users)
+	let	nameValue = 'test'
 	return Object.keys(props.users).map(
 		function(user,i){
-			console.log('user in map ',user);
-			let	nameValue = user['FIRSTNAME'] + ' ' + user['LASTNAME'];
+			console.log('user in map ',user, i);
+			if (props.users[i] != undefined ){
+
+				nameValue = props.users[i]['FIRSTNAME'] + ' ' + props.users[i]['LASTNAME'];
+			}
 			return(
 				<ClientRow  one="two" fullName={nameValue} key={i}/>
 			)
