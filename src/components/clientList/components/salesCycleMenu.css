@@ -1,14 +1,40 @@
 
 .crmTitle, .matchesTitle {
 	font-weight: bold;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
+.CRMDiv {
+	border-bottom:#00ABD3 3px solid;
+	height:100px;
 
+}
 
+.crmDataName {
+	margin-left: 15px;
+	font-weight: bold;
+
+}
+
+.crmDataName span{
+	margin-left: 5px;
+}
+
+.crmDataInfo {
+	list-style-type: none;
+	display: flex;
+	margin-top: 10px;
+}
+.crmDataInfo li {
+	margin-left: 20px;
+	font-weight: bold;
+}
 .menuDivFactfinding {
-	background-color: red;
+	border:#00ABD3 3px solid;
+	background-color: #e1f1f5;
 	width: 450px;
-	height: 180px;
+	height: 300px;
 	overflow: scroll;
 	border-radius: 5px;
 	margin-left: 552px;
@@ -16,20 +42,21 @@
 
 .menuDivFactfinding:after {
 	position: absolute;
-  bottom: 201px;
+	margin-top: -242px;
 	height: 0;
-  width: 0;
-  left: 748px;
-  border: 40px solid transparent;
-  border-bottom-color: red;
-  content: "";
+	width: 0;
+	left: 748px;
+	border: 35px solid transparent;
+	border-bottom-color: #00ABD3;
+	content: "";
 
 }
 
 .menuDivPreparation {
-	background-color: blue;
+	border:#00ABD3 3px solid;
+	background-color: #e1f1f5;
 	width: 450px;
-	height: 180px;
+	height: 300px;
 	overflow: scroll;
 	border-radius: 5px;
 	margin-left: 725px;
@@ -38,11 +65,19 @@
 
 .menuDivPreparation:after {
 	position: absolute;
-  bottom: 210px;
+  margin-top: -242px;
 	height: 0;
   width: 0;
   left: 916px;
-  border: 40px solid transparent;
-  border-bottom-color: blue;
+  border: 35px solid transparent;
+  border-bottom-color: #00ABD3;
   content: "";
+}
+
+.matchesDiv span {
+	margin-left: 10px;
+}
+
+.checkbox {
+	margin-left: 5px;
 }
