@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Styles from './SalesCycleMenu.css'
 
 export default function SalesCycleMenu(props) {
+	let menuDiv = ''
 
 	return (
 		<div className={Styles.menuDivFF}>

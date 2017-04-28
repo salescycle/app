@@ -4,16 +4,11 @@ import Chevron from './components/chevron.jsx'
 import Styles from './clientList.css'
 import StageList from './components/SalesCycleMenu.jsx'
 import MenuStyles from './components/SalesCycleMenu.css'
+import ClientRow from './components/clientRow.jsx'
 import PropTypes from 'prop-types'
 
 export default function ClientList(props) {
-	const one = 'Prospecting'
-	const two = 'Telephoning'
-	const three = 'Approach'
-	const four = 'Factfinding'
-	const five = 'Preparation'
-	const six = 'Closing'
-	const seven = 'Follow-Through'
+
 	let test = 'test value'
 
 	var count = Object.keys(props.users).length - 1;
@@ -38,52 +33,22 @@ export default function ClientList(props) {
 			} else {
 
 			}
-			return <span className={Styles.clientName}>{nameValue}</span>
+			return <ClientRow  one="two" fullName={nameValue} />
 	}
 
 
 	return (
-		<div className={`${Styles.clientRowDiv} row expanded collapse`}>
-			<div className={`${Styles.clientNameDiv} columns small-2`}>
-				{clientListItems(props.users)}
-			</div>
-			<div className={`${Styles.chevronContainer} columns small-10`}>
-				<div className='steps-container'>
-					<div className='steps green'>
-						<span>{one}</span>
-					</div>
-					<div className='steps yellow'>
-						<span>{two}</span>
-					</div>
-					<div className='steps red'>
-						<span>{three}</span>
-					</div>
-					<div onClick={props.handleFactfindingClick} className='steps'>
-						<span>{four}</span>
-					</div>
-					<div onClick={props.handleprospectingClick} className='steps'>
-						<span>{five}</span>
-					</div>
-					<div className='steps'>
-						<span>{six}</span>
-					</div>
-					<div className='steps'>
-						<span>{seven}</span>
-					</div>
-				</div>
-			</div>
-			<StageList menuDiv={props.menuDiv} />
-
+		<div>
+			{clientListItems(props.users)}
 			<button onClick={props.handleClick} className="button primary">Get Clients</button>
 		</div>
-
 	)
 }
 
 ClientList.props = {
 	clientName: elementType,
-	handleFactfindingClick: PropTypes.func,
-	handleprospectingClick: PropTypes.func,
+	factfindingClick: PropTypes.func,
+	prospectingClick: PropTypes.func,
 	handleClick: PropTypes.func
 
 }

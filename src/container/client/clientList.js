@@ -3,7 +3,7 @@ import ClientList from '../../components/clientList/clientList.jsx'
 import React from 'react'
 import css from '../../components/clientList/clientList.css'
 import styleable from 'react-styleable'
-import {fetchClientList} from '../../actions/clientList-actions'
+import {fetchClientList,handlePropectingClick} from '../../actions/clientList-actions'
 import {loadUsers} from '../../actions/user-action'
 
 class ClientListContainer extends React.Component {
@@ -11,7 +11,7 @@ class ClientListContainer extends React.Component {
       this.props.actions.fetchClientList();
   }
 
-	
+
 }
 
 const mapStateToProps = (state) => {
@@ -22,6 +22,9 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		handleClick: () => {
 			dispatch(fetchClientList())
+		},
+		prospectingClick: () =>  {
+			dispatch(handlePropectingClick())
 		}
 	}
 }
