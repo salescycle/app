@@ -6,8 +6,6 @@ import StageList from './components/SalesCycleMenu.jsx'
 import MenuStyles from './components/SalesCycleMenu.css'
 import PropTypes from 'prop-types'
 
-
-
 export default function ClientList(props) {
 	const one = 'Prospecting'
 	const two = 'Telephoning'
@@ -18,16 +16,36 @@ export default function ClientList(props) {
 	const seven = 'Follow-Through'
 	let test = 'test value'
 
-		console.log('!!!!!!! render of component', props.users[0])
-		if (props.users[0] != undefined)
-		{
-			console.log('this is being hit!')
-			test = props.users[0]['FIRSTNAME'] + ' ' + props.users[0]['LASTNAME'];
+	var count = Object.keys(props.users).length - 1;
+  console.log(count);
+	console.log('!!!!!!! render of component', props.users)
+
+	if (props.users[0] != undefined)
+	{
+		test = props.users[0]['FIRSTNAME'] + ' ' + props.users[0]['LASTNAME'];
+		var index;
+
+		for (index = 0; index < count; ++index) {
+		    console.log(props.users[index]);
 		}
+	}
+
+	function clientListItems(usersList) {
+			let nameValue = 'First Time'
+			if (props.users[0] != undefined)
+			{
+				nameValue = usersList[0]['FIRSTNAME'] + ' ' + usersList[0]['LASTNAME'] + ' from the function'
+			} else {
+
+			}
+			return <span className={Styles.clientName}>{nameValue}</span>
+	}
+
+
 	return (
 		<div className={`${Styles.clientRowDiv} row expanded collapse`}>
 			<div className={`${Styles.clientNameDiv} columns small-2`}>
-				<span className={Styles.clientName}>{test}</span>
+				{clientListItems(props.users)}
 			</div>
 			<div className={`${Styles.chevronContainer} columns small-10`}>
 				<div className='steps-container'>

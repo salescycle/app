@@ -14,7 +14,6 @@ var users = [{
 function usersReducer(state=iniitialState, action){
     switch (action.type) {
       case 'LOAD_USERS':
-
             return Object.assign({}, state, {
               users
             })
