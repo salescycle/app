@@ -1,72 +1,76 @@
-
 .crmTitle, .matchesTitle {
-	font-weight: bold;
-	margin-left: 5px;
-	margin-top: 5px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .CRMDiv {
-	border-bottom:#00ABD3 3px solid;
-	height:100px;
-
+  border-bottom: #00ABD3 3px solid;
+  height: 120px;
+	overflow: hidden;
 }
 
 .crmDataName {
-	margin-left: 15px;
-	font-weight: bold;
-
+  margin-left: 15px;
+  font-weight: bold;
 }
 
-.crmDataName span{
-	margin-left: 5px;
+.crmDataName span {
+  margin-left: 5px;
 }
 
 .crmDataInfo {
-	list-style-type: none;
-	display: flex;
-	margin-top: 10px;
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
 }
-.crmDataInfo li {
-	margin-left: 20px;
-	font-weight: bold;
+
+.dateOfBirth {
+	margin-left: 30px;
+}
+
+.crmDataAddress {
+	margin-left: 30px;
+}
+
+.crmDataGender {
+	margin-left: 30px;
 }
 .menuDivFactfinding {
-	border:#00ABD3 3px solid;
-	background-color: #e1f1f5;
-	width: 450px;
-	height: 300px;
-	overflow: scroll;
-	border-radius: 5px;
-	margin-left: 552px;
+  border: #00ABD3 3px solid;
+  background-color: #e1f1f5;
+  width: 450px;
+  height: 300px;
+  overflow: scroll;
+  border-radius: 5px;
+  margin-left: 552px;
 }
 
 .menuDivFactfinding:after {
-	position: absolute;
-	margin-top: -242px;
-	height: 0;
-	width: 0;
-	left: 748px;
-	border: 35px solid transparent;
-	border-bottom-color: #00ABD3;
-	content: "";
-
+  position: absolute;
+  margin-top: -242px;
+  height: 0;
+  width: 0;
+  left: 748px;
+  border: 35px solid transparent;
+  border-bottom-color: #00ABD3;
+  content: "";
 }
 
 .menuDivPreparation {
-	border:#00ABD3 3px solid;
-	background-color: #e1f1f5;
-	width: 450px;
-	height: 300px;
-	overflow: scroll;
-	border-radius: 5px;
-	margin-left: 725px;
-
+  border: #00ABD3 3px solid;
+  background-color: #e1f1f5;
+  width: 450px;
+  height: 300px;
+  overflow: scroll;
+  border-radius: 5px;
+  margin-left: 725px;
 }
 
 .menuDivPreparation:after {
-	position: absolute;
+  position: absolute;
   margin-top: -242px;
-	height: 0;
+  height: 0;
   width: 0;
   left: 916px;
   border: 35px solid transparent;
@@ -75,9 +79,9 @@
 }
 
 .matchesDiv span {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .checkbox {
-	margin-left: 5px;
+  margin-left: 5px;
 }

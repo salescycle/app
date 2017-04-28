@@ -11,20 +11,28 @@ export default function SalesCycleMenu(props) {
 				<div className={Styles.crmDataName}>
 					<span>Bill</span>
 					<span>Braskulina</span>
+					</div>
+					<div className={Styles.crmDataInfo}>
+					<span className={Styles.dateOfBirth}>12/02/1973</span>
+					<span className={Styles.crmDataAddress}>123 Terry Dr. <br /> WI, 53291</span>
+					<span className={Styles.crmDataGender}>M</span>
 				</div>
-				<ul className={Styles.crmDataInfo}>
-					<li>12/02/1973</li>
-					<li>123 Terry Dr. WI, 53291</li>
-					<li>M</li>
-				</ul>
 			</div>
 			<div className={Styles.matchesDiv}>
 				<div className={Styles.matchesTitle}>Potential Matches</div>
-				<input className={Styles.checkbox} type="checkbox"/>
-				<span>Bob Braskolinaowsiki</span>
-				<span>123 Terri Dr. WI, 53291</span>
-				<span>M</span>
-				<span>.50</span>
+
+					<div className={Styles.crmDataName}>
+						<input type="checkbox" />
+						<span>Bill</span>
+						<span>Braskulina</span>
+					</div>
+					<div className={Styles.crmDataInfo}>
+					<span className={Styles.dateOfBirth}>12/02/1973</span>
+					<span className={Styles.crmDataAddress}>123 Terry Dr. <br /> WI, 53291</span>
+					<span className={Styles.crmDataGender}>M</span>
+					<span className={Styles.crmDataScore}>.50</span>
+				</div>
+
 			</div>
 		</div>
 	)
