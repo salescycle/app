@@ -5,13 +5,16 @@ import Styles from './SalesCycleMenu.css'
 export default function SalesCycleMenu(props) {
 	let menuDiv = ''
 
+	if(! props.isVisible){
+		return (<div></div>);
+	}
 	return (
-		<div className={Styles.menuDivFF}>
+		<div className={Styles.menuDivPreparation}>
 			<div className={Styles.CRMDiv}>
 				<div className={Styles.crmTitle}>CRM</div>
 				<div className={Styles.crmDataName}>
-					<span>Bill</span>
-					<span>Braskulina</span>
+					<span>Zack</span>
+					<span>Willow</span>
 					</div>
 					<div className={Styles.crmDataInfo}>
 					<span className={Styles.dateOfBirth}>12/02/1973</span>
@@ -24,14 +27,14 @@ export default function SalesCycleMenu(props) {
 
 					<div className={Styles.crmDataName}>
 						<input type="checkbox" />
-						<span>Bill</span>
-						<span>Braskulina</span>
+						<span>Zackery</span>
+						<span>Willow</span>
 					</div>
 					<div className={Styles.crmDataInfo}>
 					<span className={Styles.dateOfBirth}>12/02/1973</span>
-					<span className={Styles.crmDataAddress}>123 Terry Dr. <br /> WI, 53291</span>
+					<span className={Styles.crmDataAddress}>132 Terry Dr. <br /> WI, 53291</span>
 					<span className={Styles.crmDataGender}>M</span>
-					<span className={Styles.crmDataScore}>.50</span>
+					<span className={Styles.crmDataScore}></span>
 				</div>
 
 			</div>

@@ -7,6 +7,7 @@ import MenuStyles from './components/SalesCycleMenu.css'
 import ClientRow from './components/clientRow.jsx'
 import PropTypes from 'prop-types'
 
+
 export default function ClientList(props) {
 
 	/*let test = 'test value'
@@ -67,6 +68,7 @@ function getUsers(){
 				 stage6 = props.users[i]['STAGE6']
 			}
 			return(
+				<div>
 				<ClientRow
 				 stage1={stage1}
 				 stage2={stage2}
@@ -75,7 +77,9 @@ function getUsers(){
 				 stage5={stage5}
 				 stage6={stage6}
 				fullName={nameValue}
+				handleClick={props.prospectingClick}
 				key={i}/>
+				</div>
 			)
 		}
 	);
@@ -88,6 +92,7 @@ console.log('user list', userslist);
 	return (
 		<div>
 			{userslist}
+			<StageList isVisible={true} />
 			<button onClick={props.handleClick} className="button primary">Get Clients</button>
 		</div>
 	)

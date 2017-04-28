@@ -52,7 +52,7 @@ console.log("this is the stage", props.stage1);
 					<div className={getClassName(props.stage4)}>
 						<span>{five}</span>
 					</div>
-					<div className={props.stage5 === 'N' ? 'steps' : 'steps green'}>
+					<div className={props.stage5 === 'N' ? 'steps' : 'steps green'} onclick = {props.handleClick}>
 						<span>{six}</span>
 					</div>
 					<div className={props.stage6 === 'N' ? 'steps' : 'steps green'}>
@@ -60,9 +60,6 @@ console.log("this is the stage", props.stage1);
 					</div>
 				</div>
 			</div>
-			{/*<StageList menuDiv={props.menuDiv}/> */}
-
-
 		</div>
 
 	)

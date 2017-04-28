@@ -10,6 +10,12 @@ function usersReducer(state=iniitialState, action){
               )
         break;
       default :
+			case 'HANDLE_PROSPECTING_CLICK':
+			return Object.assign({}, state, {
+							menuVisible : false
+						}
+					)
+			break;
         return iniitialState
     }
 }

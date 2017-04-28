@@ -22,7 +22,7 @@
 .crmDataInfo {
   list-style-type: none;
   display: flex;
-  margin: 0 auto;
+  margin-left: 50px;
 }
 
 .dateOfBirth {
@@ -68,7 +68,7 @@
 }
 
 .menuDivPreparation:after {
-  position: fixed;
+  position: absolute;
   margin-top: -305px;
   height: 0;
   width: 0;
