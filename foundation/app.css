@@ -71,11 +71,32 @@
 .steps span:before{
 
 }
-.steps.active span{
-  font-weight: bold;
 
+.steps.green span{
+ font-weight: bold;
+ color: black;
 }
-.steps.active:before,
-.steps.active:after {
+
+.steps.red span{
+ font-weight: bold;
+ color: black;
+}
+
+ .steps.yellow span{
+  font-weight: bold;
+	color: black;
+}
+.steps.yellow:before,
+.steps.yellow:after {
   background: gold;
+}
+
+.steps.green:before,
+.steps.green:after {
+  background: green;
+}
+
+.steps.red:before,
+.steps.red:after {
+  background: red;
 }

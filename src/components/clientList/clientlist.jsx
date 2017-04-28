@@ -31,13 +31,13 @@ export default function ClientList(props) {
 			</div>
 			<div className={`${Styles.chevronContainer} columns small-10`}>
 				<div className='steps-container'>
-					<div className='steps'>
+					<div className='steps green'>
 						<span>{one}</span>
 					</div>
-					<div className='steps active'>
+					<div className='steps yellow'>
 						<span>{two}</span>
 					</div>
-					<div className='steps'>
+					<div className='steps red'>
 						<span>{three}</span>
 					</div>
 					<div onClick={props.handleFactfindingClick} className='steps'>

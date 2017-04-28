@@ -10,6 +10,8 @@ class ClientListContainer extends React.Component {
   componentDidMount() {
       this.props.actions.fetchClientList();
   }
+
+	
 }
 
 const mapStateToProps = (state) => {
