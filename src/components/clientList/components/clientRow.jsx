@@ -22,31 +22,31 @@ export default function ClientRow(props) {
 			<div className={`${Styles.chevronContainer} columns small-10`}>
 				<div className='steps-container'>
 					<div className='steps green'>
-						<span>{props.one}</span>
+						<span>{one}</span>
 					</div>
 					<div className='steps yellow'>
-						<span>{props.two}</span>
+						<span>{two}</span>
 					</div>
 					<div className='steps red'>
-						<span>{props.three}</span>
+						<span>{three}</span>
 					</div>
 					<div className='steps'>
-						<span>{props.four}</span>
+						<span>{four}</span>
 					</div>
 					<div className='steps'>
-						<span>{props.five}</span>
+						<span>{five}</span>
 					</div>
 					<div className='steps'>
-						<span>{props.six}</span>
+						<span>{six}</span>
 					</div>
 					<div className='steps'>
-						<span>{props.seven}</span>
+						<span>{seven}</span>
 					</div>
 				</div>
 			</div>
 			{/*<StageList menuDiv={props.menuDiv}/> */}
 
-			
+
 		</div>
 
 	)
