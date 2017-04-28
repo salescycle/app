@@ -2,27 +2,29 @@ import React from 'react'
 import {elementType} from 'react-prop-types';
 import Chevron from './components/chevron.jsx'
 import Styles from './clientList.css'
+import StageList from './components/SalesCycleMenu.jsx'
 
 
 export default function ClientList(props) {
-		const one = 'Website'
-		const two = 'Closing'
-		const three = 'TBD'
-		const four = 'Factfinder'
-		const five = 'Approach'
-		const six = 'Telephone'
+		const one = 'Prospecting'
+		const two = 'Telephoning'
+		const three = 'Approach'
+		const four = 'Factfinding'
+		const five = 'Preparation'
+		const six = 'Closing'
+		const seven = 'Follow-Through'
 
 	return (
-		<div className={`${Styles.clientRowDiv} row`}>
+		<div className={`${Styles.clientRowDiv} row expanded collapse`}>
 			<div className={`${Styles.clientNameDiv} columns small-2`}>
 				<span className={Styles.clientName}>Bill Brasky</span>
 			</div>
-			<div className="columns small-10">
+			<div className={`${Styles.chevronContainer} columns small-10`}>
 			<div className='steps-container'>
 				<div className='steps'>
 					<span>{one}</span>
 				</div>
-				<div className='steps'>
+				<div className='steps active'>
 					<span>{two}</span>
 				</div>
 				<div className='steps'>
@@ -37,8 +39,12 @@ export default function ClientList(props) {
 				<div className='steps'>
 					<span>{six}</span>
 				</div>
+				<div className='steps'>
+					<span>{seven}</span>
+				</div>
 			</div>
 			</div>
+			<StageList />
 		</div>
 
 	)

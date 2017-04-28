@@ -1,8 +1,14 @@
 .clientRowDiv {
 	padding-top: 20px;
+	padding-left: 10px;
 	background-color: #CCCCCC;
-	margin-left: 200px;
+	margin-left: 100px;
+	height: 90px;
 }
+
+ .chevronContainer {
+	 padding-left: 25px;
+ }
 
  .chevronBackground {
 	background-image: url('../../svgs/chevron5.svg');
@@ -93,7 +99,7 @@
 
 .steps span{
   display: block;
-  padding-left: 40px;
+  padding-left: 32px;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
