@@ -1,6 +1,7 @@
 .titleImage{
-  .float: left !important;
-	margin-top: 15px;
+  float: left !important;
+	margin-top: 20px;
+	margin-left: -60px;
 }
 
 .appName {
@@ -9,6 +10,8 @@
 }
 
 .appNameDiv {
-	margin-top: 22px;
+	margin-top: 30px;
+	position: absolute;
+	margin-left: 215px;
 
 }

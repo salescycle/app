@@ -11,7 +11,7 @@ export default function Home(props) {
 		<div>
 			<div className="row collapse">
 				<div className="columns small-8">
-					<Header titleText="| Might Morphin Power Client Syncer"></Header>
+					<Header titleText="| Sales Cycle Dash Board"></Header>
 				</div>
 			</div>
 			<div className="row expanded collapse">
