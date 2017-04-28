@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 
 export default function ClientList(props) {
 
-	let test = 'test value'
+	/*let test = 'test value'
 
 	var count = Object.keys(props.users).length - 1;
   console.log(count);
@@ -26,20 +26,44 @@ export default function ClientList(props) {
 	}
 
 	function clientListItems(usersList) {
-			let nameValue = 'First Time'
+		let output
+			var count = Object.keys(props.users).length - 1;
+		  console.log(count)
+			console.log('!!!!!!! render of component', props.users)
+
 			if (props.users[0] != undefined)
 			{
-				nameValue = usersList[0]['FIRSTNAME'] + ' ' + usersList[0]['LASTNAME'] + ' from the function'
-			} else {
 
+				var index;
+
+				for (index = 0; index < count; ++index) {
+					//let	nameValue = props.users[index]['FIRSTNAME'] + ' ' + props.users[index]['LASTNAME'];
+					let nameValue ='test value'
+				  output += <ClientRow  one="two" fullName={nameValue} />
+				}
 			}
-			return <ClientRow  one="two" fullName={nameValue} />
-	}
+			return output
+	}*/
+function getUsers(){
+	console.log('pros in render : ',props.users)
+	return Object.keys(props.users).map(
+		function(user,i){
+			console.log('user in map ',user);
+			let	nameValue = user['FIRSTNAME'] + ' ' + user['LASTNAME'];
+			return(
+				<ClientRow  one="two" fullName={nameValue} key={i}/>
+			)
+		}
+	);
+}
 
+let userslist = getUsers()
+
+console.log('user list', userslist);
 
 	return (
 		<div>
-			{clientListItems(props.users)}
+			{userslist}
 			<button onClick={props.handleClick} className="button primary">Get Clients</button>
 		</div>
 	)
