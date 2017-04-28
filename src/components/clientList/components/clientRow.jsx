@@ -11,7 +11,19 @@ export default function ClientRow(props) {
 	const six = 'Closing'
 	const seven = 'Follow-Through'
 
+function getClassName (status)
+{
+	let className = "steps"
+	if (status === 'Y')
+		{
+			className = "steps green"
+		} else if (status === 'D') {
+			className = "steps yellow"
+		}
 
+		return className
+
+}
 
 
 console.log("this is the stage", props.stage1);
@@ -34,10 +46,10 @@ console.log("this is the stage", props.stage1);
 					<div className={props.stage2 === 'N' ? 'steps' : 'steps green'}>
 						<span>{three}</span>
 					</div>
-					<div className={props.stage3 === 'N' ? 'steps' : 'steps green'}>
+					<div className={getClassName(props.stage3)}>
 						<span>{four}</span>
 					</div>
-					<div className={props.stage4 === 'N' ? 'steps' : 'steps green'}>
+					<div className={getClassName(props.stage4)}>
 						<span>{five}</span>
 					</div>
 					<div className={props.stage5 === 'N' ? 'steps' : 'steps green'}>
