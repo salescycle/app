@@ -3,7 +3,7 @@ class clientListApi {
     return fetch('http://salescycle-api.azurewebsites.net/list').then(response => {
       return response.json()
     }).then(clientList => {
-		    console.log("****client list ", clientList)
+		    console.log("****client list from api", clientList)
       return clientList
     })
   }

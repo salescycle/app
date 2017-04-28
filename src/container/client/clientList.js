@@ -4,6 +4,7 @@ import React from 'react'
 import css from '../../components/clientList/clientList.css'
 import styleable from 'react-styleable'
 import {fetchClientList} from '../../actions/clientList-actions'
+import {loadUsers} from '../../actions/user-action'
 
 class ClientListContainer extends React.Component {
   componentDidMount() {
@@ -12,9 +13,7 @@ class ClientListContainer extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-
-		return {clientList: []}
-
+  	return state
 }
 
 const mapDispatchToProps = (dispatch) => {

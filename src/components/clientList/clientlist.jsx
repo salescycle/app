@@ -16,11 +16,18 @@ export default function ClientList(props) {
 	const five = 'Preparation'
 	const six = 'Closing'
 	const seven = 'Follow-Through'
+	let test = 'test value'
 
+		console.log('!!!!!!! render of component', props.users[0])
+		if (props.users[0] != undefined)
+		{
+			console.log('this is being hit!')
+			test = props.users[0]['FIRSTNAME'] + ' ' + props.users[0]['LASTNAME'];
+		}
 	return (
 		<div className={`${Styles.clientRowDiv} row expanded collapse`}>
 			<div className={`${Styles.clientNameDiv} columns small-2`}>
-				<span className={Styles.clientName}>Bill Brasky</span>
+				<span className={Styles.clientName}>{test}</span>
 			</div>
 			<div className={`${Styles.chevronContainer} columns small-10`}>
 				<div className='steps-container'>
