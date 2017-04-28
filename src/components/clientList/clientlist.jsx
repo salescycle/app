@@ -3,6 +3,10 @@ import {elementType} from 'react-prop-types';
 import Chevron from './components/chevron.jsx'
 import Styles from './clientList.css'
 import StageList from './components/SalesCycleMenu.jsx'
+import MenuStyles from './components/SalesCycleMenu.css'
+import PropTypes from 'prop-types'
+
+
 
 export default function ClientList(props) {
 	const one = 'Prospecting'
@@ -29,10 +33,10 @@ export default function ClientList(props) {
 					<div className='steps'>
 						<span>{three}</span>
 					</div>
-					<div className='steps'>
+					<div onClick={props.handleFactfindingClick} className='steps'>
 						<span>{four}</span>
 					</div>
-					<div className='steps'>
+					<div onClick={props.handleprospectingClick} className='steps'>
 						<span>{five}</span>
 					</div>
 					<div className='steps'>
@@ -43,11 +47,15 @@ export default function ClientList(props) {
 					</div>
 				</div>
 			</div>
+			<StageList menuDiv={props.menuDiv} />
 		</div>
 
 	)
 }
 
 ClientList.props = {
-	clientName: elementType
+	clientName: elementType,
+	handleFactfindingClick: PropTypes.func,
+	handleprospectingClick: PropTypes.func
+
 }

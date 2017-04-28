@@ -1,11 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Styles from './SalesCycleMenu.css'
 
 export default function SalesCycleMenu(props) {
-	var menuDivFF = Styles.menuDivFactfinding
-	var menuDivPrep = Styles.menuDivPreparation
+
 	return (
-		<div className={menuDivFF}>
+		<div className={Styles.menuDivFF}>
 			<div className={Styles.CRMDiv}>
 				<div className={Styles.crmTitle}>CRM</div>
 				<div className={Styles.crmDataName}>
@@ -38,4 +38,6 @@ export default function SalesCycleMenu(props) {
 	)
 }
 
-SalesCycleMenu.props = {}
+SalesCycleMenu.props = {
+	menuDiv: PropTypes.string
+}

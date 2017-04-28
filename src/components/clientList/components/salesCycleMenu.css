@@ -47,8 +47,8 @@
 }
 
 .menuDivFactfinding:after {
-  position: absolute;
-  margin-top: -242px;
+  position: fixed;
+  margin-top: -305px;
   height: 0;
   width: 0;
   left: 748px;
@@ -68,8 +68,8 @@
 }
 
 .menuDivPreparation:after {
-  position: absolute;
-  margin-top: -242px;
+  position: fixed;
+  margin-top: -305px;
   height: 0;
   width: 0;
   left: 916px;

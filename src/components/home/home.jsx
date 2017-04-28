@@ -16,10 +16,10 @@ export default function Home(props) {
 			</div>
 			<div className="row expanded collapse">
 				<div className={`${Styles.mainMenu} columns small-12`}>
-					<ClientListContainer/>
-					<StageList />
+					<ClientListContainer />
 				</div>
 			</div>
+			<button onClick={handleClick} className="button primary">Get Clients</button>
 		</div>
 	)
 
