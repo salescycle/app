@@ -48,6 +48,8 @@ export default function ClientList(props) {
 				</div>
 			</div>
 			<StageList menuDiv={props.menuDiv} />
+
+			<button onClick={props.handleClick} className="button primary">Get Clients</button>
 		</div>
 
 	)
@@ -56,6 +58,7 @@ export default function ClientList(props) {
 ClientList.props = {
 	clientName: elementType,
 	handleFactfindingClick: PropTypes.func,
-	handleprospectingClick: PropTypes.func
+	handleprospectingClick: PropTypes.func,
+	handleClick: PropTypes.func
 
 }

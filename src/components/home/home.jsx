@@ -19,7 +19,6 @@ export default function Home(props) {
 					<ClientListContainer />
 				</div>
 			</div>
-			<button onClick={handleClick} className="button primary">Get Clients</button>
 		</div>
 	)
 
