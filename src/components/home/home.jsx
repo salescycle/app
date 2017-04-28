@@ -10,7 +10,7 @@ export default function Home(props) {
 	return (
 		<div>
 			<div className="row collapse">
-				<div className="columns small-8">
+				<div className="columns small-12">
 					<Header titleText="|  Sales Cycle Dash Board"></Header>
 				</div>
 			</div>
