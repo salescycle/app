@@ -4,17 +4,15 @@ import React from 'react'
 import css from '../../components/clientList/clientList.css'
 import styleable from 'react-styleable'
 import {fetchClientList,handlePropectingClick} from '../../actions/clientList-actions'
-import {loadUsers} from '../../actions/user-action'
 
 class ClientListContainer extends React.Component {
   componentDidMount() {
       this.props.actions.fetchClientList();
   }
-
-
 }
 
 const mapStateToProps = (state) => {
+    console.log("*@&*(@states ", state)
   	return state
 }
 
